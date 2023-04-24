@@ -1,4 +1,4 @@
-# <center>*Ejercicios JavaScript*</center>
+# *Ejercicios JavaScript*
 
 ---
 
