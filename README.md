@@ -1,4 +1,4 @@
-#                                         Ejercicios JavaScript
+# <center>*Ejercicios JavaScript*</center>
 
 ---
 
@@ -6,7 +6,7 @@
 
 ---
 
-## Repositorio que utilizo para practicar lógica de programación con el lenguaje JavaScript.
+## *Repositorio que utilizo para practicar lógica de programación con el lenguaje JavaScript.*
 
 ### *Ejercicios tomados de:*
 
