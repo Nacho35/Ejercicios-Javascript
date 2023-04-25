@@ -233,6 +233,55 @@ function boolToWord(bool) {
 
 //* Suponga que la cadena de entrada de prueba siempre es una cadena válida. Por ejemplo, la entrada de prueba puede ser "1 año" o "5 años". El primer carácter de la cadena siempre es un número.
 
+let edad = 0;
+
 function getAge(inputString) {
-	// return the girl's correct age as an integer. Happy coding :)
+	switch (edad) {
+		case 0:
+			return parseInt(inputString);
+
+		case 1:
+			return parseInt(inputString);
+
+		case 2:
+			return parseInt(inputString);
+
+		case 3:
+			return parseInt(inputString);
+
+		case 4:
+			return parseInt(inputString);
+
+		case 5:
+			return parseInt(inputString);
+
+		case 6:
+			return parseInt(inputString);
+
+		case 7:
+			return parseInt(inputString);
+
+		case 8:
+			return parseInt(inputString);
+
+		default:
+			break;
+	}
+}
+
+//* Convertir número a matriz invertida de dígitos
+//* Dado un número aleatorio no negativo, debe devolver los dígitos de este número dentro de una matriz en orden inverso.
+
+//* Ejemplo (Entrada => Salida):
+//* 35231 => [1,3,2,5,3]
+//* 0 => [0]
+
+let n = 35331894;
+let newArr = [];
+function digitize(n) {
+	for (let i = 0; i < n.length; n++) {
+		const n = newArr[n];
+	}
+	return;
+	newArr;
 }
