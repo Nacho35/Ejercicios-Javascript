@@ -276,12 +276,52 @@ function getAge(inputString) {
 //* 35231 => [1,3,2,5,3]
 //* 0 => [0]
 
-let n = 35331894;
-let newArr = [];
-function digitize(n) {
-	for (let i = 0; i < n.length; n++) {
-		const n = newArr[n];
-	}
-	return;
-	newArr;
+let n = [35331894];
+
+function digitize() {
+	let num = n.toString();
+	let arr = num.split("");
+	return arr.reverse();
+}
+//! funciona pero no pasa el test de codewars !!!
+
+//* Depuración de la función sayHello
+//* La nave estelar Enterprise se ha encontrado con un problema al crear un programa para saludar a todos cuando suben a bordo. ¡Es su trabajo arreglar el código y hacer que el programa vuelva a funcionar!
+
+//* Salida de ejemplo:
+
+//* Hello, Mr. Spock
+
+let name = "Mr. Spock";
+
+function sayHello() {
+	return `Hello, ${name}`;
+}
+
+//* ¿Puedes encontrar la aguja en el pajar?
+
+//* Escriba una función findNeedle()que tome un array montón de basura pero que contenga uno"needle"
+
+//* Después de que su función encuentre la aguja, debería devolver un mensaje (como una cadena) que dice:
+
+//* "found the needle at position" además index encontró la aguja, así que:
+
+//* Ejemplo (Entrada --> Salida)
+
+//* ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5"
+
+let haystack = [
+	"hay",
+	"junk",
+	"hay",
+	"hay",
+	"moreJunk",
+	"needle",
+	"randomJunk",
+];
+let array = [];
+function findNeedle(haystack) {
+	haystack.forEach((haystack, index, array) => {
+		console.log(haystack + index);
+	});
 }
