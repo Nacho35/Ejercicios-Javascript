@@ -314,14 +314,19 @@ let haystack = [
 	"hay",
 	"junk",
 	"hay",
+	"needle",
 	"hay",
 	"moreJunk",
-	"needle",
 	"randomJunk",
 ];
-let array = [];
-function findNeedle(haystack) {
-	haystack.forEach((haystack, index, array) => {
-		console.log(haystack + index);
-	});
+
+function findNeedle() {
+	let search = haystack.indexOf("needle");
+	if (search !== -1) {
+		return `found the needle at position ${search} `;
+	} else {
+		return "La palabra 'needle' no se encuentra en el array.";
+	}
 }
+
+//! funciona pero no pasa el test de codewars !!!
