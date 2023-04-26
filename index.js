@@ -330,3 +330,17 @@ function findNeedle() {
 }
 
 //! funciona pero no pasa el test de codewars !!!
+
+//* Hubo un examen en tu clase y lo pasaste. ¡Felicidades!
+//* Pero eres una persona ambiciosa. Quiere saber si es mejor que el estudiante promedio de su clase.
+
+//* Recibe una matriz con los puntajes de las pruebas de sus compañeros. ¡Ahora calcule el promedio y compare su puntaje!
+
+//* ¡Regresa True si estás mejor, de lo contrario False!
+
+//* Nota:
+//* Sus puntos no están incluidos en la matriz de puntos de su clase. ¡Para calcular el punto promedio, puede agregar su punto a la matriz dada!
+
+function betterThanAverage(classPoints, yourPoints) {
+	// Your code here
+}
