@@ -359,4 +359,25 @@ function betterThanAverage() {
 
 //* No debe eliminar ni agregar elementos de/a la matriz.
 
-function twoSort(s) {}
+let s = [
+	"bitcoin",
+	"take",
+	"over",
+	"the",
+	"world",
+	"maybe",
+	"who",
+	"knows",
+	"perhaps",
+];
+function twoSort() {
+	s.sort();
+	const string = s[0].split("").join("***");
+	return string;
+}
+
+//* Dada una matriz no vacía de enteros, devuelva el resultado de multiplicar los valores en orden. Ejemplo:
+
+//* [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+
+function grow(x) {}
