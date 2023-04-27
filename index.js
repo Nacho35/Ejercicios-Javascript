@@ -341,6 +341,22 @@ function findNeedle() {
 //* Nota:
 //* Sus puntos no están incluidos en la matriz de puntos de su clase. ¡Para calcular el punto promedio, puede agregar su punto a la matriz dada!
 
-function betterThanAverage(classPoints, yourPoints) {
-	// Your code here
+let classPoints = [100, 40, 34, 57, 29, 72, 57, 88];
+let yourPoints = 80;
+
+function betterThanAverage() {
+	let suma = 0;
+	for (let i = 0; i < classPoints.length; i++) {
+		suma += classPoints[i];
+	}
+	const promedio = suma / classPoints.length;
+	return yourPoints > promedio;
 }
+
+//* Se le dará una lista de cadenas. Debe ordenarlo alfabéticamente (distingue entre mayúsculas y minúsculas y según los valores ASCII de los caracteres) y luego devolver el primer valor.
+
+//* El valor devuelto debe ser una cadena, y tener "***"entre cada una de sus letras.
+
+//* No debe eliminar ni agregar elementos de/a la matriz.
+
+function twoSort(s) {}
