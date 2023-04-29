@@ -380,4 +380,40 @@ function twoSort() {
 
 //* [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
 
-function grow(x) {}
+let x = [1, 2, 3, 4];
+let result = 1;
+
+function grow() {
+	for (let i = 0; i < x.length; i++) {
+		result *= x[i];
+	}
+	return result;
+}
+
+//* Complete la función que acepta un parámetro de cadena e invierte cada palabra de la cadena. Deben conservarse todos los espacios en la cadena.
+
+//* Ejemplos
+
+//* "This is an example!" ==> "sihT si na !elpmaxe"
+//* "double  spaces"      ==> "elbuod  secaps"
+
+function reverseWords(str) {
+	return str.split("").reverse().join("").split(" ").reverse().join(" ");
+}
+
+reverseWords("el mundo esta en llamas");
+
+//* Crea una función que responda a la pregunta "¿Estás tocando el banjo?".
+//* Si tu nombre comienza con la letra "R" o "r" minúscula, ¡estás tocando el banjo!
+
+//* La función toma un nombre como único argumento y devuelve una de las siguientes cadenas:
+
+//* name + " plays banjo"
+//* name + " does not play banjo"
+
+//* Los nombres dados son siempre cadenas válidas.
+
+function areYouPlayingBanjo(name) {
+	// Implement me
+	return name;
+}
