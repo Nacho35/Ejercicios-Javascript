@@ -417,3 +417,58 @@ function areYouPlayingBanjo(name) {
 	// Implement me
 	return name;
 }
+
+//* Implemente una función que convierta el valor booleano dado en su representación de cadena.
+
+//* Nota: Solo se darán entradas válidas.
+
+function booleanToString(b) {
+	return b ? "true" : "false";
+}
+
+//* Crea una función que dé un saludo personalizado. Esta función toma dos parámetros: namey owner.
+
+//* Use condicionales para devolver el mensaje adecuado:
+
+//* caso	devolver
+
+//* el nombre es igual al dueño	'Hola jefe'
+
+//* de lo contrario	'Hola invitado'
+
+function greet(name, owner) {
+	return name === owner ? "Hello boss" : "Hello guest";
+}
+
+//* En esta pequeña tarea, se le da una cadena de números separados por espacios y tiene que devolver el número más alto y el más bajo.
+
+//* Ejemplos
+//* highAndLow("1 2 3 4 5");  // return "5 1"
+//* highAndLow("1 2 -3 4 5"); // return "5 -3"
+//* highAndLow("1 9 3 4 -5"); // return "9 -5"
+//* notas
+
+//* Todos los números son válidos Int32, no es necesario validarlos.
+//* Siempre habrá al menos un número en la cadena de entrada.
+//* La cadena de salida debe ser dos números separados por un solo espacio, y el número más alto es el primero.
+
+let str1 = "";
+let str2 = "";
+
+function highAndLow(numbers) {
+	const str1 = numbers.charAt(numbers.length - 1);
+	const str2 = numbers.charAt(0);
+	return str1.concat(" " + str2);
+}
+highAndLow("1, 9, 3, 4, -5");
+//! falta que verifique los numeros negativos solo devuelve positivos !!!
+
+//* Escriba una función para dividir una cadena y convertirla en una matriz de palabras.
+
+//* Ejemplos (Entrada ==> Salida):
+//* "Robin Singh" ==> ["Robin", "Singh"]
+
+//* "I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
+function stringToArray(string) {
+	// code code code
+}
