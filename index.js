@@ -470,5 +470,30 @@ highAndLow("1, 9, 3, 4, -5");
 
 //* "I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
 function stringToArray(string) {
-	// code code code
+	return string.split(" ");
+}
+stringToArray("I love arrays they are my favorite");
+
+//* Necesitamos una función que pueda transformar un número (entero) en una cadena.
+
+//* ¿Qué formas de lograr esto conoces?
+
+//* Ejemplos (entrada --> salida)
+
+//* 123  --> "123"
+//* 999  --> "999"
+//* - 100 -- > "-100"
+
+function numberToString(num) {
+	return num.toString();
+}
+numberToString(88);
+
+//* Devuelve el número (recuento) de vocales en la cadena dada.
+
+//* Consideraremos a, e, i, o, ucomo vocales para este Kata (pero no y).
+
+//* La cadena de entrada solo constará de letras minúsculas y/o espacios.
+function getCount(str) {
+	return 0;
 }
