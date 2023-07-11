@@ -276,14 +276,13 @@ function getAge(inputString) {
 //* 35231 => [1,3,2,5,3]
 //* 0 => [0]
 
-let n = [35331894];
+let n = 35331894;
 
 function digitize() {
 	let num = n.toString();
 	let arr = num.split("");
 	return arr.reverse();
 }
-//! funciona pero no pasa el test de codewars !!!
 
 //* Depuración de la función sayHello
 //* La nave estelar Enterprise se ha encontrado con un problema al crear un programa para saludar a todos cuando suben a bordo. ¡Es su trabajo arreglar el código y hacer que el programa vuelva a funcionar!
@@ -310,26 +309,27 @@ function sayHello() {
 
 //* ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5"
 
-let haystack = [
-	"hay",
-	"junk",
-	"hay",
+var haystack = [
+	"3",
+	"123124234",
+	undefined,
 	"needle",
+	"world",
 	"hay",
-	"moreJunk",
-	"randomJunk",
+	2,
+	"3",
+	true,
+	false,
 ];
 
 function findNeedle() {
 	let search = haystack.indexOf("needle");
 	if (search !== -1) {
-		return `found the needle at position ${search} `;
+		return `found the needle at position ${search}`;
 	} else {
 		return "La palabra 'needle' no se encuentra en el array.";
 	}
 }
-
-//! funciona pero no pasa el test de codewars !!!
 
 //* Hubo un examen en tu clase y lo pasaste. ¡Felicidades!
 //* Pero eres una persona ambiciosa. Quiere saber si es mejor que el estudiante promedio de su clase.
@@ -452,16 +452,12 @@ function greet(name, owner) {
 //* Siempre habrá al menos un número en la cadena de entrada.
 //* La cadena de salida debe ser dos números separados por un solo espacio, y el número más alto es el primero.
 
-let str1 = "";
-let str2 = "";
-
 function highAndLow(numbers) {
-	const str1 = numbers.charAt(numbers.length - 1);
-	const str2 = numbers.charAt(0);
-	return str1.concat(" " + str2);
+	let numbersArray = numbers.split(" ").map((numStr) => parseInt(numStr));
+	let highest = Math.max(...numbersArray);
+	let lowest = Math.min(...numbersArray);
+	return `${highest} ${lowest}`;
 }
-highAndLow("1, 9, 3, 4, -5");
-//! falta que verifique los numeros negativos solo devuelve positivos !!!
 
 //* Escriba una función para dividir una cadena y convertirla en una matriz de palabras.
 
@@ -495,5 +491,74 @@ numberToString(88);
 
 //* La cadena de entrada solo constará de letras minúsculas y/o espacios.
 function getCount(str) {
-	return 0;
+	let count = 0;
+	for (let i = 0; i < str.length; i++) {
+		if (
+			str[i] === "a" ||
+			str[i] === "e" ||
+			str[i] === "i" ||
+			str[i] === "o" ||
+			str[i] === "u"
+		) {
+			count++;
+		}
+	}
+	return count;
+}
+
+//* Bienvenido. En este kata, se le pide que eleve al cuadrado cada dígito de un número y los concatene.
+
+//* Por ejemplo, si ejecutamos 9119 a través de la función, saldrá 811181, porque 9 2 es 81 y 1 2 es 1. (81-//* 1-1-81)
+
+//* Ejemplo #2: Una entrada de 765 devolverá/debería devolver 493625 porque 7 2 es 49, 6 2 es 36 y 5 2 es 25. (49-36-25)
+
+//* Nota: La función acepta un número entero y devuelve un número entero.
+
+//* ¡Feliz codificación!
+
+let num = 2040;
+
+function squareDigits() {
+	let squaredDigits = num
+		.toString()
+		.split("")
+		.map((digit) => Math.pow(parseInt(digit), 2));
+	return parseInt(squaredDigits.join(""));
+}
+
+//* Compruebe si una cadena tiene la misma cantidad de 'x' y 'o'. El método debe devolver un valor booleano y no distinguir entre mayúsculas y minúsculas. La cadena puede contener cualquier carácter.
+
+//* Ejemplos de entrada/salida:
+
+//* XO("ooxx") => true
+//* XO("xooxx") => false
+//* XO("ooxXm") => true
+//* XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
+//* XO("zzoo") => false
+
+let str = "xoxox";
+
+function XO() {
+	let countX = 0;
+	let countO = 0;
+
+	for (let i = 0; i < str.length; i++) {
+		if (str[i].toLowerCase() === "x") {
+			countX++;
+		} else if (str[i].toLowerCase() === "o") {
+			countO++;
+		}
+	}
+	return countX === countO;
+}
+
+//* En las cadenas de ADN, los símbolos "A" y "T" son complementarios entre sí, como "C" y "G". Su función recibe un lado del ADN (cadena, excepto Haskell); necesitas devolver el otro lado complementario. La hebra de ADN nunca está vacía o no hay ADN en absoluto (de nuevo, a excepción de Haskell).
+
+//* Ejemplo: ( entrada --> salida )
+
+//* "ATTGC" --> "TAACG"
+//* "GTAT" --> "CATA"
+
+function DNAStrand(dna) {
+	//your code here
 }
