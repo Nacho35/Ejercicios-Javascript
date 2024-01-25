@@ -560,5 +560,76 @@ function XO() {
 //* "GTAT" --> "CATA"
 
 function DNAStrand(dna) {
-	//your code here
+	return dna
+		.split("")
+		.map(function (base) {
+			switch (base) {
+				case "A":
+					return "T";
+				case "T":
+					return "A";
+				case "C":
+					return "G";
+				case "G":
+					return "C";
+				default:
+					return "";
+			}
+		})
+		.join("");
+}
+
+//* Complete la solución para que devuelva verdadero si el primer argumento (cadena) pasado termina con el segundo argumento (también una cadena).
+
+//* Ejemplos:
+
+//* solution("abc", "bc"); // returns true
+//* solution("abc", "d"); // returns false
+
+function solution(str, ending) {
+	return str.endsWith(ending);
+}
+
+//* Crea una función simple llamada `greet` que devuelva el famoso "hello world!"
+
+let greet = () => {
+	let hi = "hello";
+	let world = "world!";
+	let hw = "hello world!";
+
+	if (`${hi} ${world}` === hw) {
+		return hw;
+	} else {
+		return "";
+	}
+};
+
+//* Dado un número entero, determina si es un número cuadrado :
+
+//* En matemáticas, un número cuadrado o cuadrado perfecto es un número entero que es el cuadrado de un número entero; en otras palabras, es el producto de algún número entero consigo mismo.
+
+//* Las pruebas siempre utilizarán algún número entero, así que no se preocupe por eso en lenguajes de tipo dinámico.
+
+//* Ejemplos
+//* -1  =>  false
+//* 0  =>  true
+//* 3  =>  false
+//* 4  =>  true
+//* 25  =>  true
+//* 26  =>  false
+
+let isSquare = function (n) {
+	return Math.sqrt(n) % 1 === 0;
+};
+
+//* Complete la función que toma dos números enteros ( a, b, donde a < b) y devuelva una matriz de todos los números enteros entre los parámetros de entrada, incluidos ellos.
+
+//* Por ejemplo:
+
+//* a = 1
+//* b = 4
+//* --> [1, 2, 3, 4]
+
+function between(a, b) {
+	// your code here
 }
