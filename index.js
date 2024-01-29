@@ -590,9 +590,9 @@ function solution(str, ending) {
 	return str.endsWith(ending);
 }
 
-//* Crea una función simple llamada `greet` que devuelva el famoso "hello world!"
+//* Crea una función simple llamada `greetings` que devuelva el famoso "hello world!"
 
-let greet = () => {
+let greetings = () => {
 	let hi = "hello";
 	let world = "world!";
 	let hw = "hello world!";
@@ -630,6 +630,34 @@ let isSquare = function (n) {
 //* b = 4
 //* --> [1, 2, 3, 4]
 
+let a = 1;
+let b = 4;
+
 function between(a, b) {
-	// your code here
+	if (a > b) {
+		console.error("Error: a debe ser menor que b");
+		return [];
+	}
+
+	let result = [];
+
+	for (let i = a; i <= b; i++) {
+		result.push(i);
+	}
+	return result;
+}
+console.log(between(a, b));
+
+//* En este Kata pasamos un número (n) a una función.
+
+//* Su código determinará si el número pasado es par (o no).
+
+//* La función debe devolver verdadero o falso.
+
+//* Los números pueden ser positivos o negativos, enteros o flotantes.
+
+//* Los flotadores con parte decimal distinta de cero se consideran NO pares para este kata.
+
+function testEven(n) {
+	//Your awesome code here!
 }
